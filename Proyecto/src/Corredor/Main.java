@@ -6,10 +6,10 @@ public class Main {
 
 			    public static void main(String[] args) {
 			    	
-			        int correr,recarga,entrenar;
+			        int recarga;
 			        Scanner in = new Scanner(System.in);
 			        Corredor corredor = new Corredor();
-				    System.out.print("Ingrese la energía del corredor actual: ");
+				    System.out.print("Ingrese la energÃ­a del corredor actual: ");
 				    corredor.setEnergia(in.nextInt());		        
 			        
 			    
@@ -20,15 +20,15 @@ public class Main {
 			                System.out.print(" \n La energia del corredor es: "+ corredor.getEnergia()); 
 			            			            
 			            if(corredor.getEnergia() == 0){
-			                System.out.println("\n La energía se recargara...");			          
-			                	corredor.recargaEnergía(30);
+			                System.out.println("\n La energÃ­a se recargara...");			          
+			                	corredor.recargaEnergÃ­a(30);
 			                	corredor.entrenar();			                
 			                System.out.print("\n La energia del corredor es: "+ corredor.getEnergia());
 			            }
 			           
 			            else{			            	
-			                System.out.println("\n La energía se recargara...");			                   
-			                	corredor.recargaEnergía(30);
+			                System.out.println("\n La energÃ­a se recargara...");			                   
+			                	corredor.recargaEnergÃ­a(30);
 			                	corredor.entrenar();			                
 			                System.out.print("\n La energia del corredor es: "+ corredor.getEnergia());
 			            }
